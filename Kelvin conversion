@@ -1,0 +1,6 @@
+const Kelvin = prompt("What is the temperature in Kelvin?");
+const Celsius = Kelvin - 273;
+console.log(`The temperature is ${Celsius} degrees Celsius.`);
+let Fahrenheit = Celsius * (9/5) + 32;
+Fahrenheit = Math.floor(Fahrenheit);
+console.log(`The temperature is ${Fahrenheit} degrees Fahrenheit.`);
