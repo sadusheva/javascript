@@ -1,0 +1,34 @@
+let username = prompt("What is your name?")
+let question = prompt(`What is your question ${username}?`);
+let randomnumber = Math.floor(Math.random() *8);
+//console.log(randomnumber);
+
+switch (randomnumber) {
+  case 1:
+    alert(`It is certain ${username}`);
+    break;
+  case 2: 
+    alert(`It is decidedly so ${username}`);
+    break;
+  case 3:
+    alert(`Reply hazy try again ${username}`);
+    break;
+  case 4: 
+    alert(`Cannot predict now ${username}`);
+    break;
+  case 5:
+    alert(`Don’t count on it ${username}`);
+    break;
+  case 6:
+    alert(`My sorces say no ${username}`);
+    break;
+  case 7:
+    alert(`Outlook not so good ${username}`);
+    break;
+  case 8:
+    alert(`Signs point to yes ${username}`);
+    break;
+  default:
+    alert(`Invalid choice ${username}`);
+    break;
+}
