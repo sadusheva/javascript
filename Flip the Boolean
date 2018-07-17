@@ -1,0 +1,15 @@
+function reverse(bool) {
+	if (bool === true) {return(false); 
+						 } if (bool === false) { return(true);
+						 } else {return ("boolean expected")} 
+}
+
+/ Will expect: 
+
+*true ➞ false
+
+false ➞ true
+
+0 ➞ "boolean expected"
+
+null ➞ "boolean expected" */
