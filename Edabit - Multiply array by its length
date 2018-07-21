@@ -1,0 +1,7 @@
+function MultiplyByLength(arr) {
+	let MultiplyByLength = arr.map(function(i){
+		return i * arr.length;
+	});
+	
+	return MultiplyByLength;
+}
