@@ -1,0 +1,13 @@
+//Create a function that takes a string and returns a string with its letters in alphabetical order.
+//"hello" ➞ "ehllo"
+
+function AlphabetSoup(str) {
+  const array = Array.from(str);
+  //Makes the original string into array
+	let string = array.sort(" ");
+  //sorts the array
+	string = string.join('');
+  //joins the array back into a string without spaces
+	return string;
+
+}
