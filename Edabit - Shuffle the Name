@@ -1,0 +1,8 @@
+//Create a function that accepts a string (of a persons first and last name) and returns a string with the first and last name swapped.
+
+function nameShuffle(str) {
+//splits string for the first 2 spaces
+	const newString = str.split(' ', 2);
+//returns last name first and then first name
+	return newString[1] + " " + newString[0];
+	}
