@@ -1,0 +1,7 @@
+function findLargestNum(arr) {
+	arr.sort(function(a,b) {
+		return a-b;
+    //Compare function needs to be used to compare numbers instead of strings
+	});
+	return arr[3];
+}
