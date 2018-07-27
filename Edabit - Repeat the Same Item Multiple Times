@@ -1,0 +1,19 @@
+/*Create a function that takes two arguments (item, times). 
+The first argument (item) is the item that needs repeating while the second argument (times) is the number 
+of times the item is to be repeated. Return the result in an array.
+"edabit", 3 ➞ ["edabit", "edabit", "edabit"] */
+
+function repeat(item, times) {
+	var newItem = [item];
+  //Makes a new array out of the item
+	if (times === 0){return[];
+  //If times is 0, return an empty array
+							}else {
+	for (var i=0; i < (times-1); i++ ){
+		newItem.push(item);
+  //otherwise add item to the end of the array while the loop is going
+	}
+	}
+	return newItem;
+	
+}
