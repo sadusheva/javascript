@@ -6,3 +6,9 @@ function nameShuffle(str) {
 //returns last name first and then first name
 	return newString[1] + " " + newString[0];
 	}
+	
+// Or
+
+function nameShuffle(str) {
+return str.split(" ").reverse().join(" ");
+}
