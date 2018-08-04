@@ -1,0 +1,18 @@
+/*For the input of your function will be given one sentence. 
+You have to return its fixed copy in a way so it’s always 
+starts with a capital letter and ends with a dot.
+Pay attention to the fact that not all of the fixes is necessary. 
+If a sentence already ends with a dot then adding another one will be a mistake. */
+
+function correctSentence(text) {
+let firstLetter = text.charAt(0).toUpperCase();
+text = Array.from(text);
+text[0] = firstLetter;
+if(text.includes(".")){
+  text = text.join("");
+} else {text = text.join("") + ".";}
+return text;
+
+}
+
+correctSentence("hi");
