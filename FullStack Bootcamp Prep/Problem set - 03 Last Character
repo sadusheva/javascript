@@ -1,0 +1,13 @@
+/* Define a function lastCharacter that accepts two strings as arguments. 
+lastCharacter should return true if both strings end with the same character. 
+Otherwise, lastCharacter should return false.
+
+lastCharacter('apples', 'pumpkins'); // => true
+
+lastCharacter('marker', 'pen'); // => false */
+
+function lastCharacter(str1, str2){
+  if(str1.charAt(str1.length-1) == str2.charAt(str2.length-1)){
+    return true;
+  } else {return false;}
+}
