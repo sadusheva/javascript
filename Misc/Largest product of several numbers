@@ -1,0 +1,10 @@
+/* Given a set of numbers, find the largest product possible. 
+Ex - 1,2,3 -> 6 because 2*3
+Ex - 7,5,14,2,8,8,10,1,2,3 -> 140 because 14 * 10 
+
+function biggestMultiplied(...nums){
+    nums.sort(function(a,b){
+        return b-a;
+    });
+    console.log(nums[0] * nums[1]);
+}
