@@ -7,7 +7,19 @@ lastCharacter('apples', 'pumpkins'); // => true
 lastCharacter('marker', 'pen'); // => false */
 
 function lastCharacter(str1, str2){
-  if(str1.charAt(str1.length-1) == str2.charAt(str2.length-1)){
+  if(str1.charAt(str1.length-1) === str2.charAt(str2.length-1)){
+    return true;
+  } else {return false;}
+}
+
+//Different solution
+
+lastCharacter('apples', 'pumpkins'); // => true
+
+lastCharacter('marker', 'pen'); // => false */
+
+function lastCharacter(str1, str2){
+  if(str1[str1.length-1] === str2[str2.length-1]{
     return true;
   } else {return false;}
 }
