@@ -31,8 +31,7 @@ function bacteriaTime(currentNum, targetNum){
 
   bacteriaTime(5, 10000);
   
- //Version that gives time only in minutes
- 
+ //Version that gives time only in minutes 
  function bacteriaTime(currentNum, targetNum){
   let time = 0;
   if(currentNum >= targetNum){
@@ -45,4 +44,17 @@ function bacteriaTime(currentNum, targetNum){
     }
     currentNum *= 2;
   }
+}
+
+// Easier solution using a while loop instead.
+function bacteriaTime(currentNum, targetNum){
+  let time = 0;
+  if(currentNum >= targetNum){
+    return "targetNum must be larger than currentNum";
+  }
+  while(currentNum < targetNum){
+    currentNum *= 2;
+    time += 20;
+  }
+  return time;
 }
