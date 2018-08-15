@@ -1,0 +1,18 @@
+/* Define a function, crazyCaps, that accepts a string as an argument. 
+crazyCaps should return a string in which every other character is capitalized. 
+The first letter should be lower-cased.
+
+crazyCaps('fullstack is amazing'); // => fUlLsTaCk iS AmAzInG! */
+
+function crazyCaps(str){
+  let newstr = '';
+  let letter;
+  for (i = 0; i <= str.length - 1; i++){
+    if(i % 2 == 1){
+      letter = str[i].toUpperCase();
+      newstr += letter;
+    }
+    else newstr += str[i];
+  }
+  return newstr;
+}
