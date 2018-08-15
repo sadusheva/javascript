@@ -14,3 +14,15 @@ function onlyOdds (num){
   }
   return sum;
 }
+
+// Alternative solution (worse than #1)
+function onlyOdds (num){
+  let sum = 0;
+  for (i=num; i>= 0; i--){
+    if(i % 2 == 0){
+      continue;
+    }
+    sum += i;
+  }
+  return sum;
+}
