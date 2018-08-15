@@ -36,3 +36,15 @@ function mySlice (originalString, startIdx, endIdx){
   }
   return newString;
 }
+
+//Different (and better) Solution 
+
+function mySlice (originalString, startIdx = 0, endIdx = originalString.length){
+  let newString = "";
+  for(i = startIdx; i < endIdx; i++){
+      newString += originalString[i];
+  }
+  return newString;
+}
+
+mySlice('slice and dice', 2, 10);
