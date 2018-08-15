@@ -1,0 +1,48 @@
+/* Define a function, bacteriaTime, that accepts two arguments:
+
+currentNum (num) - number of starting bacteria
+targetNum (num) - desired number of bacteria
+Assuming that the number of bacteria double every 20 minutes, 
+bacteriaTime should return the number of minutes required for the number of bacteria to 
+grow from the currentNum to a number equal to or larger than the targetNum.
+
+You can assume the currentNum will be a positive integer. If the targetNum is smaller 
+than the currentNum, return the string 'targetNum must be larger than currentNum'.
+
+bacteriaTime(1, 8); // => 60 */
+
+// Version that gives hours and minutes 
+
+function bacteriaTime(currentNum, targetNum){
+  let time = 0;
+  if(currentNum >= targetNum){
+    return "targetNum must be larger than currentNum";
+  }
+  for(i = 0; i <= 100000000; i+= 20){
+    if(currentNum >= targetNum){
+      time = i;
+      let hours = Math.floor(time / 60);
+      let minutes = time % 60;
+      return `It will take ${hours} hours and ${minutes} minutes`;
+    }
+    currentNum *= 2;
+  }
+}
+
+  bacteriaTime(5, 10000);
+  
+ //Version that gives time only in minutes
+ 
+ function bacteriaTime(currentNum, targetNum){
+  let time = 0;
+  if(currentNum >= targetNum){
+    return "targetNum must be larger than currentNum";
+  }
+  for(i = 0; i <= 1000; i+= 20){
+    if(currentNum >= targetNum){
+      time = i;
+      return time;
+    }
+    currentNum *= 2;
+  }
+}
